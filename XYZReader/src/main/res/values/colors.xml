@@ -23,7 +23,6 @@
     <color name="theme_accent">#6B38FB</color>
     <color name="ltgray">#ffe0e0e0</color>
 
-
     <color name="primaryColor">#5d00ed</color>
     <color name="primaryDarkColor">#0000b9</color>
     <color name="secondaryColor">#5d00ed</color>
@@ -31,4 +30,5 @@
     <color name="secondaryDarkColor">#0000b9</color>
     <color name="primaryTextColor">#000000</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="subTextColor">#8A000000</color>
 </resources>
