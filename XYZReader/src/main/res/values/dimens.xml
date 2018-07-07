@@ -1,12 +1,11 @@
 <resources>
     <!-- detail -->
-    <dimen name="detail_title_text_size">32sp</dimen>
-    <dimen name="detail_body_text_size">22sp</dimen>
     <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
 
     <dimen name="rv_top_padding">64dp</dimen>
     <dimen name="content_top_padding">8dp</dimen>
     <dimen name="toolbar_elevation">8dp</dimen>
     <dimen name="app_bar_height">200dp</dimen>
-
+    <dimen name="progressbar_width">128dp</dimen>
+    <dimen name="progressbar_margin">64dp</dimen>
 </resources>

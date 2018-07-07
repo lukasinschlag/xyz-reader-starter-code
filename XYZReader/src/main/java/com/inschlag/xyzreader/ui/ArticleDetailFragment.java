@@ -75,7 +75,7 @@ public class ArticleDetailFragment extends Fragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments().containsKey(ARG_ITEM_ID)) {
+        if (getArguments() != null && getArguments().containsKey(ARG_ITEM_ID)) {
             mItemId = getArguments().getLong(ARG_ITEM_ID);
         }
 
@@ -176,6 +176,8 @@ public class ArticleDetailFragment extends Fragment implements
                                 + "</font>"));
 
             }
+            Log.d("ADF", "got: " + mCursor.getString(ArticleLoader.Query.BODY).substring(0,100));
+
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
@@ -190,6 +192,7 @@ public class ArticleDetailFragment extends Fragment implements
                         @Override
                         public void onErrorResponse(VolleyError volleyError) { }
                     });
+            ((ArticleDetailActivity)getActivity()).hideProgress();
         } else {
             mRootView.setVisibility(View.GONE);
             bylineView.setText("N/A" );
