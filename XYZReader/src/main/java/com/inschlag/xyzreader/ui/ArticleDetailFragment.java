@@ -178,7 +178,8 @@ public class ArticleDetailFragment extends Fragment implements
             }
             Log.d("ADF", "got: " + mCursor.getString(ArticleLoader.Query.BODY).substring(0,100));
 
-            bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
+            bodyView.setText(Html.fromHtml("<p>" + mCursor.getString(ArticleLoader.Query.BODY)
+                    .replaceAll("\r\n\r\n", "</p><p>") + "</p>"));
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
