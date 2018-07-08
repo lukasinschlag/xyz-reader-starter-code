@@ -3,9 +3,18 @@
     <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
 
     <dimen name="rv_top_padding">64dp</dimen>
+    <dimen name="rv_btm_padding">28dp</dimen>
     <dimen name="content_top_padding">16dp</dimen>
-    <dimen name="toolbar_elevation">8dp</dimen>
+    <dimen name="item_padding">4dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
     <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="app_bar_expanded_margin_btm">72dp</dimen>
+    <dimen name="app_bar_subtitle_margin_btm">32dp</dimen>
+    <dimen name="app_bar_subtitle_margin_start">48dp</dimen>
+    <dimen name="app_bar_subtitle_margin_end">32dp</dimen>
     <dimen name="progressbar_width">128dp</dimen>
     <dimen name="progressbar_margin">64dp</dimen>
 </resources>

@@ -1,6 +1,7 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -14,7 +15,7 @@
                 android:layout_height="?actionBarSize"
                 android:layout_marginLeft="@dimen/list_toolbar_side_margin"
                 android:layout_marginRight="@dimen/list_toolbar_side_margin"
-                android:elevation="@dimen/toolbar_elevation"
+                app:elevation="@dimen/toolbar_elevation"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
                 <ImageView
@@ -37,7 +38,7 @@
             android:layout_height="match_parent"
             android:clipToPadding="false"
             android:paddingTop="@dimen/rv_top_padding"
-            android:paddingBottom="28dp"
+            android:paddingBottom="@dimen/rv_btm_padding"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
             android:scrollbarStyle="outsideOverlay" />

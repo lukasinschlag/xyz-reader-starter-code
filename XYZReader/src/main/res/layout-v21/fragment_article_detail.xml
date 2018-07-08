@@ -62,7 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/detail_card_top_margin"
-            android:background="@drawable/card_bg"
+            android:background="@android:color/white"
+            android:elevation="@dimen/card_elevation"
             android:maxWidth="@dimen/detail_card_max_width"
             android:orientation="vertical"
             android:paddingTop="@dimen/content_top_padding">
